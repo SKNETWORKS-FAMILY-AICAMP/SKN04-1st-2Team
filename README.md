@@ -31,7 +31,6 @@
 전국 자동차 등록 현황 및 기업 FAQ 조회시스템
 
 >### 프로젝트 소개
-<!-- 10여년간의 차량 등록 데이터를 바탕으로 그래프를 구현하여  -->
 &nbsp;안녕하세요!🚗⚡🔋 🛠️ 🌍 📊 🚘 
 우리는 친환경 모빌리티의 미래를 데이터로 그려내는 프로젝트 팀입니다. 
 국토교통부 통계누리의 상용 자동차 등록 현황과 charge info의 전기차 등록 현황을 바탕으로, 
@@ -39,7 +38,6 @@
 
 &nbsp;우리의 스트림릿 페이지는 전기차와 상용차의 등록 추이를 비교하여, 
 친환경 모빌리티로의 전환 속도를 한눈에 보여줍니다. 
-이를 통해 우리는 탄소 배출 감소와 ?지속 가능한 교통 체계 구축의 진행 상황? 을 파악할 수 있습니다. 
 
 &nbsp;4명의 팀원이 크롤링, 데이터베이스 구축, 스트림릿 개발을 분담하여, 
 복잡한 데이터를 누구나 쉽게 이해할 수 있는 시각적 정보로 변환했습니다. 
@@ -81,51 +79,30 @@
  
 <hr>
 
-### Prerequisites
-
-```cmd
-pip install -r requirements.txt
-```
-
-<hr>
-
 ### Usage
 
 ```cmd
-python main.py
 streamlit run main.py
 ```
 
-<hr>
-
-
-
-<br><br><br>
 
 ## ERD
 <img src="https://media.discordapp.net/attachments/1273954886098358295/1276372185820168285/Screenshot_2024-08-23_at_11.47.16_AM.png?ex=66c949ba&is=66c7f83a&hm=d381fd15713d307d6e69b267bf5e9fa2f1888ba1076da474bd28b5b8b8bf6a2e&=&format=webp&quality=lossless&width=766&height=671" width="700" height="500"/>
 
 
-<br><br><br>
-
-
 ## 주요 프로시저
 
-<br><br><br>
 
 <img src="https://media.discordapp.net/attachments/1273954886563922038/1276371522730197083/image.png?ex=66c9491c&is=66c7f79c&hm=7902ec0df803752f353ea5652e3dc367addfa0d0ad89b5875381dac3c4de8cc0&=&format=webp&quality=lossless&width=550&height=293" width="700" height="400"/>
 
 
 ##  프로젝트 결과
-- 테스트/ 시연 이미지 삽입  
-
 | 지역별 전기차 승용차 등록 현황 비교 | 지역별 전기차 수 | 
 |--|--|
-| <img src="https://media.discordapp.net/attachments/1273954886098358295/1276361622910275688/Screenshot_2024-08-23_at_11.04.31_AM.png?ex=66c93fe4&is=66c7ee64&hm=718ec59cd1faf338e44cd9d0290f416acb35d8eb4698f5e76b2c00db09192266&=&format=webp&quality=lossless&width=898&height=671" width="300" height="300"/> | <img src="https://media.discordapp.net/attachments/1273954886098358295/1276361622910275688/Screenshot_2024-08-23_at_11.04.31_AM.png?ex=66c93fe4&is=66c7ee64&hm=718ec59cd1faf338e44cd9d0290f416acb35d8eb4698f5e76b2c00db09192266&=&format=webp&quality=lossless&width=898&height=671" width="300" height="300"/>|
+| <img src="https://media.discordapp.net/attachments/1273954886563922033/1276418809908957194/2024-08-23_145152.png?ex=66c97526&is=66c823a6&hm=7d0fb920072de630ba8de24e35ee63d941d37fa746a46485ac18337c9d9079d9&=&format=webp&quality=lossless&width=720&height=435" width="300" height="300"/> | <img src="https://media.discordapp.net/attachments/1273954886098358295/1276361622910275688/Screenshot_2024-08-23_at_11.04.31_AM.png?ex=66c93fe4&is=66c7ee64&hm=718ec59cd1faf338e44cd9d0290f416acb35d8eb4698f5e76b2c00db09192266&=&format=webp&quality=lossless&width=898&height=671" width="300" height="300"/>|
 | 지역별 승용차 수 | FAQ 조회 시스템 |
 | <img src="https://media.discordapp.net/attachments/1273954886098358295/1276361622910275688/Screenshot_2024-08-23_at_11.04.31_AM.png?ex=66c93fe4&is=66c7ee64&hm=718ec59cd1faf338e44cd9d0290f416acb35d8eb4698f5e76b2c00db09192266&=&format=webp&quality=lossless&width=898&height=671" width="300" height="300"/> |<img src="https://media.discordapp.net/attachments/1273954886098358295/1276362162276667525/Screenshot_2024-08-23_at_11.07.26_AM.png?ex=66c94065&is=66c7eee5&hm=dd53cfb424b64aad8c1ef5bebabba8dc0b751c806e276527b74b07d792fb7b64&=&format=webp&quality=lossless&width=719&height=671" width="300" height="300"/>
-<br><br><br>
+<br>
 
 ##   한줄 회고 
-학과 수업에서는 코딩만 배웠었는데 처음으로 DB 작업을 해보며, 본격적인 코딩 전에 데이터 작업이 얼마나 중요한지 새삼 깨달았습니다.
-
+처음 진행하는 프로젝트로서 쉽지 않았지만, 좋은 팀원을 만나 무사히 마무리할 수 있었다.
