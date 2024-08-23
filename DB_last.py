@@ -1,14 +1,15 @@
 import psycopg2
 import requests
 import json
+import elcet_car_crawling
 
 # PostgreSQL 데이터베이스에 연결
 conn = psycopg2.connect(
     host='localhost',
     dbname='postgres',
     user='postgres',
-    password='0000',
-    port=5431
+    password='7276',
+    port=5432
 )
 
 # 테이블 생성 및 데이터 삽입
@@ -61,24 +62,10 @@ with conn.cursor() as cur:
     conn.commit()
 
 # 전기차 등록 현황
-electric_car_count = []
-response = requests.get("https://chargeinfo.ksga.org/ws/statistics/ev/list",
-                        headers={
-                            'user-agent': 'Mozilla 5.0',
-                            'Referer': 'https://chargeinfo.ksga.org/front/statistics/evCar',
-                        })
-result = json.loads(response.text)
-for year_dict in result.get('result'):
-    electric_car_count.append(list(year_dict.values()))
-
-electric_car_last_count = []
-electric_car_last_count.append(electric_car_count[0])
-for i in electric_car_count:
-    if i[0][-2:] == '12':
-        electric_car_last_count.append(i)
+electric_car_last_count = elcet_car_crawling.electric_car_crawling()
 
 # 전체 차량 등록 현황
-with open('col2.txt', 'r') as file:
+with open('col2.txt', 'r',encoding='UTF8') as file:
     lines_list = [line.strip().split() for line in file]
 
 total = []
